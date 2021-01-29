@@ -3,7 +3,7 @@ stack_name: bridge
 dependencies:
   - prod/essentials.yaml
 parameters:
-  AwsAccount: {{ environment_variable.TRAVIS_BRANCH }}
+  AwsAccount: prod
   AwsDefaultVpcId: "vpc-9c70bbf9"
   NewRelicAccountId: "754728514883"
   NewRelicExternalId: !ssm /infra/NewRelicExternalId
